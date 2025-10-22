@@ -1,73 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menú Principal</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Index</title>
+  <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <h1>🌐 MENÚ PRINCIPAL</h1>
-  <p>
-    Bienvenido a mi menú principal!
-  </p>
-  <section class="grupo">
-    <h2>🧮 Calculadora</h2>
-<a id="calculadora" href="calculadora.html">
-  <i class="fa-solid fa-calculator"></i> Calculadora
-</a>
-  </section>
-  <section class="grupo">
-    <h2>🧪 Pruebas</h2>
-    <a id="prueba1" href="prueba1.html">
-    <i class="fa-solid fa-flask"></i> Prueba 1
-    </a>
-    <a id="prueba2" href="prueba2.html">
-    <i class="fa-solid fa-flask"></i> Prueba 2
-    </a>
-    <a id="prueba3" href="prueba3.html">
-    <i class="fa-solid fa-flask"></i> Prueba 3
-    </a>
-  </section>
-  <section class="grupo">
-    <h2>💻 Prácticas</h2>
-    <a id="prac01" href="prac01.html">
-    <i class="fa-solid fa-flask"></i> Práctica 1
-    </a>
-    <a id="prac02" href="prac02.html">
-    <i class="fa-solid fa-flask"></i> Práctica 2
-    </a>
-    <a id="prac03" href="prac03.html">
-    <i class="fa-solid fa-flask"></i> Práctica 3
-    </a>
-    <a id="prac04" href="prac04.html">
-      <i class="fa-solid fa-flask"></i> Práctica 4
-    </a>
-    <a id="prac05" href="prac05.html">
-      <i class="fa-solid fa-flask"></i> Práctica 5
-    </a>
-    <a id="prac06" href="prac06.html">
-      <i class="fa-solid fa-flask"></i> Práctica 6
-    </a>
-    <a id="prac07" href="firtsproject.html">
-      <i class="fa-solid fa-flask"></i> Práctica calificada
-    </a>
-    <a id="prac08" href="practica imagenes.html">
-      <i class="fa-solid fa-flask"></i> Práctica imágenes
-    </a>
-    <a id="prac09" href="pagianweb1.html">
-      <i class="fa-solid fa-flask"></i> Práctica web
-    </a>
-    <a id="prac10" href="practicagithub.html">
-      <i class="fa-solid fa-flask"></i> Práctica GitHub
-    </a>
-  </section>
-  <section class="grupo">
-    <h2>🏠 Navegación</h2>
-    <a href="main.html">
-      <i class="fa-solid fa-globe"></i> Menú principal
-    </a>
-  </section>
+
+<body class="bg-light">
+  <div class="container py-5">
+    <header class="bg-white p-4 p-md-5 rounded-4 shadow-sm mb-4">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-3">
+          <img src="images/perfil.jpg" class="img-fluid rounded-4 shadow-sm" alt="Foto de perfil">
+        </div>
+        <div class="col-md-9 text-md-start text-center">
+          <h1 class="display-5 fw-bold mb-3">William Dominic Tito Monteagudo</h1>
+          <p class="lead text-muted mb-0">Estudiante de Ingenieria de Sistemas, 18 años de edad, tercer semestre, Universidad Nacional del Altiplano </p>
+        </div>
+      </div>
+    </header>
+
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light bg-white rounded-4 shadow-sm mb-4">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-semibold" href="#">Trabajos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegacion">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto nav-pills align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading1">Practicas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading2">Proyectos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Desplazar</a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#scrollspyHeading3">Bootstraps</a></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading4">Pruebas</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm"
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      tabindex="0">
+      <section id="scrollspyHeading1" class="mb-5">
+        <h2 class="h4 fw-semibold mb-3">Practicas</h2>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-outline-success" href="PRACTICA CALIFICADA.html">Practica calificada</a>
+          <a class="btn btn-outline-success" href="practica imagenes.html">Practica imagenes</a>
+          <a class="btn btn-outline-success" href="prac01.html">Practica 1</a>
+          <a class="btn btn-outline-success" href="prac02.html">Practica 2</a>
+          <a class="btn btn-outline-success" href="prac03.html">Practica 3</a>
+          <a class="btn btn-outline-success" href="prac04.html">Practica 4</a>
+          <a class="btn btn-outline-success" href="prac05.html">Practica 5</a>
+          <a class="btn btn-outline-success" href="prac06.html">Practica 6</a>
+        </div>
+      </section>
+
+      <section id="scrollspyHeading2" class="mb-5">
+        <h2 class="h4 fw-semibold mb-3">Proyectos</h2>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-outline-primary" href="firtsproject.html">Proyecto 1</a>
+          <a class="btn btn-outline-primary" href="calculadora.html">Calculadora</a>
+          <a class="btn btn-outline-primary" href="pagianweb1.html">Pagina web 1</a>
+        </div>
+      </section>
+
+      <section id="scrollspyHeading3" class="mb-5">
+        <h2 class="h4 fw-semibold mb-3">Bootstraps</h2>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-outline-secondary" href="boot01.html">Boot 1</a>
+          <a class="btn btn-outline-secondary" href="boot02.html">Boot 2</a>
+          <a class="btn btn-outline-secondary" href="boot03.html">Boot 3</a>
+          <a class="btn btn-outline-secondary" href="boot04.html">Boot 4</a>
+        </div>
+      </section>
+
+      <section id="scrollspyHeading4">
+        <h2 class="h4 fw-semibold mb-3">Pruebas</h2>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-outline-danger" href="prueba1.html">Prueba 1</a>
+          <a class="btn btn-outline-danger" href="prueba2.html">Prueba 2</a>
+          <a class="btn btn-outline-danger" href="prueba3.html">Prueba 3</a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
